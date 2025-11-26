@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
+import { openInvitation } from "./komponen/open"
 
 const Hero = () => {
   const container = {
@@ -37,6 +38,7 @@ const Hero = () => {
 
   return (
     <section id='hero' className="relative overflow-hidden min-h-screen flex items-center justify-center bg-linear-to-br from-pink-300 via-purple-300 to-indigo-400">
+      <audio id="bgAudio" src="/bgmusik.mp3" autoPlay loop />
       <motion.div
         className="relative z-30 text-center text-white px-4"
         variants={container}
@@ -63,7 +65,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.6, ease: "easeOut" }}
         aria-label="Buka undangan"
-        onClick={() => document.getElementById('invitation').scrollIntoView({ behavior: 'smooth' })}
+        onClick={() => openInvitation({ anchorId: 'umur', audioId: 'bgAudio', lockDelay: 100 })}
       >
         Buka Undangan
       </motion.button>
