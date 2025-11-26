@@ -71,7 +71,7 @@ const Hero = () => {
       </motion.button>
 
       <motion.div
-        className="absolute z-10 pointer-events-none top-16 left-2 sm:top-6 sm:left-6 md:top-10 md:left-10 rotate-6"
+        className="absolute z-10 pointer-events-none top-24 left-2 sm:top-6 sm:left-6 md:top-10 md:left-10 rotate-6"
         variants={frameLeftTop}
         initial="hidden"
         animate="show"
@@ -80,7 +80,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none top-16 right-2 sm:top-8 sm:right-6 md:top-12 md:right-10 -rotate-6"
+        className="absolute z-10 pointer-events-none top-24 right-2 sm:top-8 sm:right-6 md:top-12 md:right-10 -rotate-6"
         variants={frameRightTop}
         initial="hidden"
         animate="show"
@@ -89,7 +89,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none bottom-16 left-2 sm:bottom-6 sm:left-6 md:bottom-16 md:left-10 rotate-3"
+        className="absolute z-10 pointer-events-none bottom-24 left-2 sm:bottom-6 sm:left-6 md:bottom-16 md:left-10 rotate-3"
         variants={frameLeftBottom}
         initial="hidden"
         animate="show"
@@ -98,7 +98,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none bottom-16 right-2 sm:bottom-6 sm:right-6 md:bottom-10 md:right-12 -rotate-3"
+        className="absolute z-10 pointer-events-none bottom-24 right-2 sm:bottom-6 sm:right-6 md:bottom-10 md:right-12 -rotate-3"
         variants={frameRightBottom}
         initial="hidden"
         animate="show"
