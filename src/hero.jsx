@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
       </motion.div>
       <motion.button id='open-invitation'
-        className="absolute bottom-16 left-1/2 -translate-x-1/2 text-white bg-pink-500 hover:bg-pink-600 active:bg-pink-700 px-6 py-3 rounded-full shadow-lg text-xs md:text-lg font-semibold transition-colors"
+        className="absolute bottom-28 left-1/2 -translate-x-1/2 text-white bg-pink-500 hover:bg-pink-600 active:bg-pink-700 px-6 py-3 rounded-full shadow-lg text-xs md:text-lg font-semibold transition-colors"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.6, ease: "easeOut" }}
