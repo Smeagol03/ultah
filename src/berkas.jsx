@@ -29,7 +29,7 @@ const berkas = () => {
                 />
             </div>
             <div className="flex justify-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 drop-shadow-md">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 drop-shadow-md animate-bounce">
                     SITI HULLI TSALITSAH
                 </h2>
             </div>
