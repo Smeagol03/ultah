@@ -5,24 +5,23 @@ import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi
 
 const DEFAULT_ITEMS = [
     {
-        title: 'MAKIN SABAR',
         id: 1,
+        title: 'MAKIN SABAR',
     },
     {
-        title: 'SABAR LAGI',
         id: 2,
+        title: 'SABAR LAGI',
     },
     {
-        title: 'SABAR TERUS',
         id: 3,
+        title: 'SABAR TERUS',
     },
     {
-        title: 'TETEP SABAR',
         id: 4,
+        title: 'TETEP SABAR',
     },
     {
-        title: '😂🤣',
-        id: 5,
+        bg: '/lisa.jpg'
     }
 ];
 
@@ -162,14 +161,18 @@ export default function Carousel({
                                 width: itemWidth,
                                 height: round ? itemWidth : '100%',
                                 rotateY: rotateY,
+                                backgroundImage: item.bg ? `url(${item.bg})` : undefined,
+                                backgroundSize: 'contain',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
                                 ...(round && { borderRadius: '50%' })
                             }}
                             transition={effectiveTransition}
                         >
+                            {/* overlay untuk keterbacaan teks di atas background image */}
+                            {item.bg && <div className="absolute inset-0 bg-black/20" aria-hidden="true"></div>}
                             <div className={`${round ? 'p-0 m-0' : 'mb-4 p-5'}`}>
-                                <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060010]">
-                                    {item.icon}
-                                </span>
+
                             </div>
                             <div className="p-5">
                                 <div className="mb-1 font-black text-lg text-white">{item.title}</div>
