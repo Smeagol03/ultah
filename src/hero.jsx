@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
       </motion.div>
       <motion.button id='open-invitation'
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white bg-pink-500 hover:bg-pink-600 active:bg-pink-700 px-6 py-3 rounded-full shadow-lg text-xs md:text-lg font-semibold transition-colors"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white bg-pink-500 hover:bg-pink-600 active:bg-pink-700 px-6 py-3 rounded-full shadow-lg text-xs md:text-lg font-semibold transition-colors"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.6, ease: "easeOut" }}
@@ -69,7 +69,7 @@ const Hero = () => {
       </motion.button>
 
       <motion.div
-        className="absolute z-10 pointer-events-none top-2 left-2 sm:top-6 sm:left-6 md:top-10 md:left-10 rotate-6"
+        className="absolute z-10 pointer-events-none top-10 left-2 sm:top-6 sm:left-6 md:top-10 md:left-10 rotate-6"
         variants={frameLeftTop}
         initial="hidden"
         animate="show"
@@ -78,7 +78,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none top-2 right-2 sm:top-8 sm:right-6 md:top-12 md:right-10 -rotate-6"
+        className="absolute z-10 pointer-events-none top-10 right-2 sm:top-8 sm:right-6 md:top-12 md:right-10 -rotate-6"
         variants={frameRightTop}
         initial="hidden"
         animate="show"
@@ -87,7 +87,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none bottom-2 left-2 sm:bottom-6 sm:left-6 md:bottom-16 md:left-10 rotate-3"
+        className="absolute z-10 pointer-events-none bottom-10 left-2 sm:bottom-6 sm:left-6 md:bottom-16 md:left-10 rotate-3"
         variants={frameLeftBottom}
         initial="hidden"
         animate="show"
@@ -96,7 +96,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute z-10 pointer-events-none bottom-2 right-2 sm:bottom-6 sm:right-6 md:bottom-10 md:right-12 -rotate-3"
+        className="absolute z-10 pointer-events-none bottom-10 right-2 sm:bottom-6 sm:right-6 md:bottom-10 md:right-12 -rotate-3"
         variants={frameRightBottom}
         initial="hidden"
         animate="show"
