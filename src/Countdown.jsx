@@ -27,7 +27,7 @@ export default function Countdown({ onFinish }) {
   const seconds = Math.floor((left % (1000 * 60)) / 1000);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-white bg-linear-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#111111] relative overflow-hidden">
+    <div className="min-h-screen flex flex-col px-5 items-center justify-center text-white bg-linear-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#111111] relative overflow-hidden">
       {/* Glow background circle */}
       <div className="absolute w-[500px] h-[500px] bg-purple-700/20 blur-[120px] rounded-full -z-10"></div>
 
