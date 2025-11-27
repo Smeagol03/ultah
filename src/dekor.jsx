@@ -1,5 +1,5 @@
 import Carousel from "./komponen/Carousel";
-
+import "./dekor.css";
 const Dekor = () => {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center justify-center bg-linear-to-br from-pink-300 via-purple-300 to-indigo-400 py-12">
@@ -121,43 +121,6 @@ const Dekor = () => {
           ))}
         </div>
       </div>
-
-      {/* CSS Animation Definitions */}
-      <style>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px) translateX(0px);
-          }
-          25% {
-            transform: translateY(-20px) translateX(10px);
-          }
-          50% {
-            transform: translateY(-40px) translateX(-10px);
-          }
-          75% {
-            transform: translateY(-20px) translateX(10px);
-          }
-        }
-
-        @keyframes fall {
-          0% {
-            transform: translateY(-100vh) rotate(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(100vh) rotate(720deg);
-            opacity: 0;
-          }
-        }
-
-        .delay-2000 {
-          animation-delay: 2s;
-        }
-
-        .delay-4000 {
-          animation-delay: 4s;
-        }
-      `}</style>
     </section>
   );
 };

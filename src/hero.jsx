@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { openInvitation } from "./komponen/open";
-
+import "./dekor.css";
 const Hero = () => {
   const container = {
     hidden: { opacity: 0, scale: 0.98 },
