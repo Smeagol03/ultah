@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-// import { openInvitation } from "./komponen/open"
+import { openInvitation } from "./komponen/open"
 
 const Hero = () => {
   const container = {
