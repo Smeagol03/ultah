@@ -59,7 +59,7 @@ export default function Countdown({ onFinish }) {
 
 function TimeBox({ label, value }) {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center px-5">
       <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold border border-white/10 shadow-xl">
         {value < 10 ? "0" + value : value}
       </div>
