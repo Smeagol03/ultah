@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 
 const Hadiah = ({
   title = "Hadiah",
-  description = "Ni cobak di scan cukup lah beli ayam weny",
+  description = "Aku Traktir Siomai 5 Bungkus",
   qrSrc = "/qr.jpg",
   downloadFileName = "qr-hadiah.png",
 }) => {
