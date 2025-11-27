@@ -68,6 +68,28 @@ const Hero = () => {
       className="relative overflow-hidden min-h-screen flex items-center justify-center bg-linear-to-br from-pink-300 via-purple-300 to-indigo-400"
     >
       <audio id="bgAudio" src="/bgmusik.mp3" autoPlay loop />
+      <div className="absolute inset-0">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={`confetti-${i}`}
+            className="absolute w-1 h-4 animate-bounce"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              backgroundColor: [
+                "#ff69b4",
+                "#ff1493",
+                "#c71585",
+                "#ffd700",
+                "#32cd32",
+              ][Math.floor(Math.random() * 5)],
+              animation: `fall ${5 + Math.random() * 5}s linear infinite`,
+              animationDelay: `${i * 0.1}s`,
+              opacity: Math.random() * 0.7 + 0.3,
+            }}
+          ></div>
+        ))}
+      </div>
       <motion.div
         className="relative z-30 text-center text-white px-4"
         variants={container}
