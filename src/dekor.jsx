@@ -12,7 +12,7 @@ const Dekor = () => {
 
       {/* Floating Particles */}
       <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(50)].map((_, i) => (
           <div
             key={i}
             className="absolute w-2 h-2 bg-white rounded-full opacity-60"
