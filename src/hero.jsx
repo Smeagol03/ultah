@@ -75,7 +75,7 @@ const Hero = () => {
             className="absolute w-1 h-4 animate-bounce"
             style={{
               left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              top: `${-15 + Math.random() * 10}%`,
               backgroundColor: [
                 "#ff69b4",
                 "#ff1493",
