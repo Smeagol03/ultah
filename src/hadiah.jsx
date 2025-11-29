@@ -1,9 +1,11 @@
+import { link } from "motion/react-client";
 import React, { useMemo, useState } from "react";
 
 const Hadiah = ({
   title = "Hadiah",
   description = "Aku Traktir Siomai 5 Bungkus",
-  qrSrc = "/qr.jpg",
+  qrSrc = "/hadiah.jpg",
+  linkQR = "https://link.dana.id/danakaget?c=st2x9gte3&r=eH4wxh&orderId=20251129101214718315010300166852251148794",
   downloadFileName = "qr-hadiah.png",
 }) => {
   const [status, setStatus] = useState("loading");
@@ -16,7 +18,7 @@ const Hadiah = ({
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(qrSrc);
+      await navigator.clipboard.writeText(linkQR);
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {}
